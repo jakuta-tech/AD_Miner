@@ -1,87 +1,68 @@
-# [0.5.0](https://github.com/Mazars-Tech/AD_Miner/compare/v0.4.1...v0.5.0) (2023-10-31)
+## [1.8.1](https://github.com/AD-Security/AD_Miner/compare/v1.8.0...v1.8.1) (2025-03-03)
 
 
 ### Bug Fixes
 
-* better error message ([12fd654](https://github.com/Mazars-Tech/AD_Miner/commit/12fd654794c65f4fb1c3f8fabea03cd38a155573))
-* bugs with empty neo4j database ([dc6dc10](https://github.com/Mazars-Tech/AD_Miner/commit/dc6dc10b2ec420cd175d05f5d07485e8142bbd79))
-* fix OS format for obsolete OS ([7f70296](https://github.com/Mazars-Tech/AD_Miner/commit/7f70296cbbac7c4c3f6bc4c8a4fcc498e5959c0f))
-* fix visual bug on permission cards ([25dc2af](https://github.com/Mazars-Tech/AD_Miner/commit/25dc2af8bd2c1f5a8e9a69bdf39847ec95bfe4ef))
-* remove broken and useless IOE buttons + fix users chart ([7ca4f9a](https://github.com/Mazars-Tech/AD_Miner/commit/7ca4f9ad6ad2e7f14ced6ec99336cde950d7efa8))
+* AZBase objects without tenantid attribute crashes AD Miner ([#213](https://github.com/AD-Security/AD_Miner/issues/213)) ([33d0132](https://github.com/AD-Security/AD_Miner/commit/33d01322bd9a1261798ba65206f1455f30d38795))
+
+
+
+# [1.8.0](https://github.com/AD-Security/AD_Miner/compare/v1.7.0...v1.8.0) (2024-12-10)
+
+
+### Bug Fixes
+
+* add missing fonts ([#198](https://github.com/AD-Security/AD_Miner/issues/198)) ([2ac67b9](https://github.com/AD-Security/AD_Miner/commit/2ac67b9447dbfbbc8781d4cf966aa8697bede436))
+* admin on servers request and remove duplicates ([4404962](https://github.com/AD-Security/AD_Miner/commit/44049628f4b4dd1bf4dce23beac5fc0b9b3d8230))
+* bug when using evolution ([f88c274](https://github.com/AD-Security/AD_Miner/commit/f88c2745c9fa25f97a165861ae5f59446fcf5fa9))
+* count computers in members count attribute ([1872924](https://github.com/AD-Security/AD_Miner/commit/1872924ab828cf946a59ade694abf7b1496632a3))
+* is_server request ([8898835](https://github.com/AD-Security/AD_Miner/commit/88988353a4a506106a832e845266f26dd4e6d65e))
+* missing histogram for some specific evolution use case ([5dbd83d](https://github.com/AD-Security/AD_Miner/commit/5dbd83db714415df98c28e9212b7113dcc1282a7))
+* typos in description ([bd0ae98](https://github.com/AD-Security/AD_Miner/commit/bd0ae980a1f3df77bee98982906ee0a077ce6028))
+* using existing cache to remove duplicates from paths to servers ([804c7a9](https://github.com/AD-Security/AD_Miner/commit/804c7a96f2900605c9b8468372cc527ef04f8d71))
 
 
 ### Features
 
-* add colors ([b5275a9](https://github.com/Mazars-Tech/AD_Miner/commit/b5275a9036daef508ace4789747b68d326cd32c3))
-* add custom made edges to properties taken into account ([73f4351](https://github.com/Mazars-Tech/AD_Miner/commit/73f43518ceee06dfae78c6ca5c1a70088bdd90b2))
-* add neo4j information message ([222cb3f](https://github.com/Mazars-Tech/AD_Miner/commit/222cb3f66b0a189d14c3c916ca6f46753ed0aaac))
-* add os repartition chart ([3c8f5b4](https://github.com/Mazars-Tech/AD_Miner/commit/3c8f5b42f97b51814eb1ffc1277fff7044303437))
-* adding cross domain privileges control ([1242dca](https://github.com/Mazars-Tech/AD_Miner/commit/1242dcab0668fa40244af0ceb3e9861b985c345e))
-* ghost computer pages now displays pwdlastset attribute and whether the computer is enable or not ([f15898e](https://github.com/Mazars-Tech/AD_Miner/commit/f15898e70dd839c5305019020226989bbc5ae6f5))
-* merge both unconstrainted delegation controls in one ([60f62d7](https://github.com/Mazars-Tech/AD_Miner/commit/60f62d7dd4df88f3a1775c6839871179c1e6dd4f))
-* parallelize set_dcsync request ([ed711c7](https://github.com/Mazars-Tech/AD_Miner/commit/ed711c74b0afe125af911264f62e795915594137))
-* small rework for dcsync control ([ac797ee](https://github.com/Mazars-Tech/AD_Miner/commit/ac797ee26afb9b92028afd1a7669148ba2d2b1f2))
-* small rework for GPO ([99638f1](https://github.com/Mazars-Tech/AD_Miner/commit/99638f1e52fb26ce493740ffacee2b444545ea5e))
+* better names in control pages ([2b8fd01](https://github.com/AD-Security/AD_Miner/commit/2b8fd0103989bdfd720eff451ff039ef7318a553))
+* can read laps only from path candidate ([f8d037b](https://github.com/AD-Security/AD_Miner/commit/f8d037bb6b1ea61f5dcda8ea16b8dc7806985d18))
+* improve laps reader request ([a107a68](https://github.com/AD-Security/AD_Miner/commit/a107a6888dab9da1fa5cf14bb89dd2be5daa07e2))
+* improve RBCD request and control ([a178c42](https://github.com/AD-Security/AD_Miner/commit/a178c4251d0c723ae87bac3449051c880adf4635))
+* remove ADCS servers from path candidates ([a156244](https://github.com/AD-Security/AD_Miner/commit/a156244c66a576ce1999c66316a6eb7d58004f1e))
 
 
 
-## [0.4.1](https://github.com/Mazars-Tech/AD_Miner/compare/v0.4.0...v0.4.1) (2023-10-18)
-
-
-### Bug Fixes
-
-* code typo crash AD Miner when disabling a request in config.json ([fdfd77a](https://github.com/Mazars-Tech/AD_Miner/commit/fdfd77aabd920ce473e58c136a96fe2f0d08ee5c))
-* discord invitation link is now permanent ([2ff56b3](https://github.com/Mazars-Tech/AD_Miner/commit/2ff56b34303696009d233abc3937367679e0ad01))
-* quick fail safe for da to da in case domains were not collected ([06e67ae](https://github.com/Mazars-Tech/AD_Miner/commit/06e67aea90f54e4aebc4736b33e5f7f2c70e0ce4))
-
-
-
-# [0.4.0](https://github.com/Mazars-Tech/AD_Miner/compare/v0.3.0...v0.4.0) (2023-10-16)
-
-
-### Bug Fixes
-
-* bad request initialization with specific flags ([f2148d8](https://github.com/Mazars-Tech/AD_Miner/commit/f2148d875bcc6b71d963fb38de6cf2db9b203a17))
-* bug with url encoding ([60df905](https://github.com/Mazars-Tech/AD_Miner/commit/60df905106a9d24125b3a324907ea248d01b8180))
+# [1.7.0](https://github.com/AD-Security/AD_Miner/compare/v1.6.1...v1.7.0) (2024-11-05)
 
 
 ### Features
 
-* ctrl-c catching, new method for parallel write queries & potential bug fix ([d3990f4](https://github.com/Mazars-Tech/AD_Miner/commit/d3990f4b531bc51dbc508f8985a9b266187c47dd))
-
-
-### Performance Improvements
-
-* remove 7 useless requests ([f04e1e6](https://github.com/Mazars-Tech/AD_Miner/commit/f04e1e6f3f10fe0d0cc4f846e21210d99c9ca660))
+* control that crash are displayed in grey and not missing ([#191](https://github.com/AD-Security/AD_Miner/issues/191)) ([3d5d9e2](https://github.com/AD-Security/AD_Miner/commit/3d5d9e28646ebe56d901a808e36a0262c6f8e777))
 
 
 
-# [0.3.0](https://github.com/Mazars-Tech/AD_Miner/compare/v0.2.1...v0.3.0) (2023-10-11)
+## [1.6.1](https://github.com/AD-Security/AD_Miner/compare/v1.6.0...v1.6.1) (2024-10-03)
 
 
 ### Bug Fixes
 
-* add failsaves for domains missing ([b356841](https://github.com/Mazars-Tech/AD_Miner/commit/b35684168987aa6a528594aa9e3cc48c356b5bb7))
-* comment request and remove entry in config ([1f6f2cf](https://github.com/Mazars-Tech/AD_Miner/commit/1f6f2cf965f1cf042db2df0f976e8af5f2e93fbe))
-* group anomaly acl bug ([7bf0d64](https://github.com/Mazars-Tech/AD_Miner/commit/7bf0d64203b476845001108e069147727861606f))
-* hide list when closing search bar ([52d1e85](https://github.com/Mazars-Tech/AD_Miner/commit/52d1e85e4603c7201f3a25008e2e6103d25ffc7c))
-* remove old comment ([bbd3c21](https://github.com/Mazars-Tech/AD_Miner/commit/bbd3c21f8aca77476074db1a4c38453a464b8b2f))
-* remove unused request that could cause some crash ([b2b734a](https://github.com/Mazars-Tech/AD_Miner/commit/b2b734aaf0649ac1c6df2a700b044614627c9e47))
+* better requests and anomaly_acl bug ([ebd6749](https://github.com/AD-Security/AD_Miner/commit/ebd674917b7496a035779148921c104a0e649f23))
+* only first letter was used to generate acl anomaly name label instances ([9089968](https://github.com/AD-Security/AD_Miner/commit/908996843a77672d8689c7ebf1efec87b2888ecb))
+
+
+
+# [1.6.0](https://github.com/AD-Security/AD_Miner/compare/v1.5.2...v1.6.0) (2024-09-10)
+
+
+### Bug Fixes
+
+* add missing requests in config.json ([#168](https://github.com/AD-Security/AD_Miner/issues/168)) ([5afe7db](https://github.com/AD-Security/AD_Miner/commit/5afe7db6f633a121b0d2f9f53c59bac04018dfe9))
+* fix crash when a computer is member of DA ([9416e78](https://github.com/AD-Security/AD_Miner/commit/9416e78093990102391d17231b16dc01b66c0efe))
 
 
 ### Features
 
-* add animation, auto-focus and highlight ([12580b2](https://github.com/Mazars-Tech/AD_Miner/commit/12580b2eebff273e6602dab1ef77cb06a22cb6d4))
-* search bar on main page ([f50b539](https://github.com/Mazars-Tech/AD_Miner/commit/f50b539284b712f703dcbfd89f1644d9ab109779))
-
-
-
-## [0.2.1](https://github.com/Mazars-Tech/AD_Miner/compare/v0.2.0...v0.2.1) (2023-10-05)
-
-
-### Bug Fixes
-
-* two typos ([eaa36d9](https://github.com/Mazars-Tech/AD_Miner/commit/eaa36d9284f1a53a6f034ec33ff38725e5e72ce1))
+* add cache files warning (chores) ([1ced00e](https://github.com/AD-Security/AD_Miner/commit/1ced00ec8a8d64ef310502acf9c05acb33c3faef))
 
 
 
